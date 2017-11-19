@@ -14,6 +14,7 @@ From: jekriske/r-base
   exec rstudio
 
 %post
+  export SINGULARITY_DEFFILE_FROM='jekriske/r-base'
   yum update -y
   yum install -y libxbcommon \
                  libxkbcommon \

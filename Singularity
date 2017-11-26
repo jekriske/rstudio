@@ -7,6 +7,9 @@ From: jekriske/r-base
   Rstudio_Version 1.1.383
   R_Version 3.4.2
 
+%setup
+export SINGULARITY_DEFFILE_FROM='jekriske/r-base'
+
 %help
   This will run Rstudio Desktop
 
@@ -14,7 +17,6 @@ From: jekriske/r-base
   exec rstudio
 
 %post
-  export SINGULARITY_DEFFILE_FROM='jekriske/r-base'
   yum update -y
   yum install -y libxbcommon \
                  libxkbcommon \

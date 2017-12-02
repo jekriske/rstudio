@@ -3,15 +3,17 @@ From: jekriske/r-base
 
 %labels
   Maintainer Jeff Kriske
-  Version v0.0.1
+  Version v0.0.2
   Rstudio_Version 1.1.383
-  R_Version 3.4.2
 
 %help
   This will run Rstudio Desktop
 
 %runscript
-  exec rstudio
+  exec rstudio "$@"
+
+%apprun rstudio
+  exec rstudio "$@"
 
 %post
   yum update -y

@@ -3,8 +3,8 @@ From: jekriske/r-base
 
 %labels
   Maintainer Jeff Kriske
-  Version v0.0.6
-  Rstudio_Version 1.1.447
+  Version v0.0.4
+  Rstudio_Version 1.1.419
 
 %help
   This will run Rstudio Desktop
@@ -25,7 +25,7 @@ From: jekriske/r-base
                  abattis-cantarell-fonts \
                  open-sans-fonts \
                  xorg-x11-server-utils \
-                 https://download1.rstudio.org/rstudio-1.1.447-x86_64.rpm
+                 https://download1.rstudio.org/rstudio-1.1.419-x86_64.rpm
   yum clean all && rm -rf /var/cache/yum
   cat <<EOT >> /etc/fonts/local.conf
     <match target="font">
